@@ -1,0 +1,543 @@
+[
+  {
+    "test_case_id": "TC-AUTH-001",
+    "requirement_id": "REQ-AUTH-001",
+    "title": "Valid Login with Standard User",
+    "priority": "P1",
+    "preconditions": [],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Navigate to https://www.saucedemo.com/",
+        "expected_result": "Login page is displayed with Username field, Password field, and Login button."
+      },
+      {
+        "step": 2,
+        "action": "Enter username \"standard_user\" and password \"secret_sauce\"",
+        "expected_result": "Both fields accept the input."
+      },
+      {
+        "step": 3,
+        "action": "Click the Login button",
+        "expected_result": "User is authenticated, redirected to /inventory.html, and a session token is stored."
+      }
+    ],
+    "expected_results": [
+      "URL changes to https://www.saucedemo.com/inventory.html",
+      "Inventory page loads within 1.5 seconds"
+    ],
+    "observations": [
+      "Login page elements verified in exploration evidence (username textbox, password textbox, login button)."
+    ],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-AUTH-002",
+    "requirement_id": "REQ-AUTH-002",
+    "title": "Login Validation – Empty Username and Password Fields",
+    "priority": "P1",
+    "preconditions": [],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Navigate to the login page",
+        "expected_result": "Login form is displayed."
+      },
+      {
+        "step": 2,
+        "action": "Leave both Username and Password fields empty and click Login",
+        "expected_result": "Error banner displayed with message \"Epic sadface: Username is required\"."
+      },
+      {
+        "step": 3,
+        "action": "Enter a valid username, keep Password empty, click Login",
+        "expected_result": "Error banner displayed with message \"Epic sadface: Password is required\"."
+      }
+    ],
+    "expected_results": [
+      "Appropriate inline error messages appear without navigation."
+    ],
+    "observations": [
+      "Error banner element not captured in initial evidence; assumed per SRS."
+    ],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-AUTH-003",
+    "requirement_id": "REQ-AUTH-003",
+    "title": "Login Failure – Invalid Credentials",
+    "priority": "P1",
+    "preconditions": [],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Open login page",
+        "expected_result": "Login form visible."
+      },
+      {
+        "step": 2,
+        "action": "Enter username \"standard_user\" and an incorrect password \"wrong_pass\"",
+        "expected_result": "Fields accept input."
+      },
+      {
+        "step": 3,
+        "action": "Click Login",
+        "expected_result": "Error banner displayed: \"Epic sadface: Username and password do not match any user in this service\"."
+      }
+    ],
+    "expected_results": [
+      "User remains on login page; no redirection occurs."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-AUTH-004",
+    "requirement_id": "REQ-AUTH-004",
+    "title": "Locked Out User Cannot Login",
+    "priority": "P1",
+    "preconditions": [],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Navigate to login page",
+        "expected_result": "Login form displayed."
+      },
+      {
+        "step": 2,
+        "action": "Enter username \"locked_out_user\" and password \"secret_sauce\"",
+        "expected_result": "Inputs accepted."
+      },
+      {
+        "step": 3,
+        "action": "Click Login",
+        "expected_result": "Error banner displayed: \"Epic sadface: Sorry, this user has been locked out.\""
+      }
+    ],
+    "expected_results": [
+      "Login is rejected; user stays on login page."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-AUTH-005",
+    "requirement_id": "REQ-AUTH-005",
+    "title": "Direct Route Protection – Access Inventory Without Authentication",
+    "priority": "P1",
+    "preconditions": [],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Enter URL https://www.saucedemo.com/inventory.html directly in the browser address bar",
+        "expected_result": "Application detects missing session and redirects to login page."
+      },
+      {
+        "step": 2,
+        "action": "Observe any displayed error message",
+        "expected_result": "Error banner indicates access requires login."
+      }
+    ],
+    "expected_results": [
+      "User is not granted access to protected routes."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-AUTH-006",
+    "requirement_id": "REQ-AUTH-006",
+    "title": "Logout Clears Session and Local Storage",
+    "priority": "P2",
+    "preconditions": [
+      "User is logged in as standard_user"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Open side menu via the hamburger icon",
+        "expected_result": "Side menu opens."
+      },
+      {
+        "step": 2,
+        "action": "Click the \"Logout\" link",
+        "expected_result": "User is redirected to the login page; local storage is cleared."
+      },
+      {
+        "step": 3,
+        "action": "Attempt to navigate back in browser history",
+        "expected_result": "Login page remains; protected pages are not accessible without re‑login."
+      }
+    ],
+    "expected_results": [
+      "Session token removed; no residual authentication state."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-CAT-001",
+    "requirement_id": "REQ-CAT-001",
+    "title": "Product Listing – Verify 6 Items Render Correctly",
+    "priority": "P1",
+    "preconditions": [
+      "User is logged in as standard_user and on /inventory.html"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Observe the inventory grid",
+        "expected_result": "Exactly six product cards are displayed, each containing an image, title, description, price (USD), and an \"Add to cart\" button."
+      }
+    ],
+    "expected_results": [
+      "All product data matches the specification."
+    ],
+    "observations": [
+      "Inventory page elements not captured in current exploration evidence."
+    ],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-CAT-002",
+    "requirement_id": "REQ-CAT-002",
+    "title": "Product Sorting – Verify All Four Sort Options",
+    "priority": "P2",
+    "preconditions": [
+      "User is on inventory page with default product order"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Select \"Name (A to Z)\" from the sort dropdown",
+        "expected_result": "Products reorder alphabetically ascending."
+      },
+      {
+        "step": 2,
+        "action": "Select \"Name (Z to A)\"",
+        "expected_result": "Products reorder alphabetically descending."
+      },
+      {
+        "step": 3,
+        "action": "Select \"Price (low to high)\"",
+        "expected_result": "Products reorder by price ascending."
+      },
+      {
+        "step": 4,
+        "action": "Select \"Price (high to low)\"",
+        "expected_result": "Products reorder by price descending."
+      }
+    ],
+    "expected_results": [
+      "The visual order of product cards matches the selected sort criteria."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-CAT-003",
+    "requirement_id": "REQ-CAT-003",
+    "title": "Navigate to Product Detail Page and Return",
+    "priority": "P2",
+    "preconditions": [
+      "User is logged in and on inventory page"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Click on a product title or image (e.g., \"Sauce Labs Backpack\")",
+        "expected_result": "Browser navigates to /inventory-item.html?id=0 (or appropriate id)."
+      },
+      {
+        "step": 2,
+        "action": "Verify that the detail page shows a high‑resolution image, product name, description, and price.",
+        "expected_result": "All product details are displayed correctly."
+      },
+      {
+        "step": 3,
+        "action": "Click the browser back button or the \"Back to products\" link",
+        "expected_result": "User returns to the inventory list, preserving previous sort order."
+      }
+    ],
+    "expected_results": [
+      "Detail navigation works without loss of state."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-CRT-001",
+    "requirement_id": "REQ-CRT-001",
+    "title": "Add Item to Cart – Badge Increment and Button Toggle",
+    "priority": "P1",
+    "preconditions": [
+      "User is on inventory page"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Click \"Add to cart\" on a product card",
+        "expected_result": "Button label changes to \"Remove\" and cart badge displays \"1\"."
+      },
+      {
+        "step": 2,
+        "action": "Click \"Add to cart\" on a second product",
+        "expected_result": "Cart badge updates to \"2\"."
+      }
+    ],
+    "expected_results": [
+      "Cart badge accurately reflects number of added items."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-CRT-002",
+    "requirement_id": "REQ-CRT-002",
+    "title": "Remove Item from Cart – Badge Decrement",
+    "priority": "P1",
+    "preconditions": [
+      "Two items already added to cart (badge shows 2)"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Click \"Remove\" on one of the added product cards",
+        "expected_result": "Button reverts to \"Add to cart\" and cart badge decrements to \"1\"."
+      },
+      {
+        "step": 2,
+        "action": "Navigate to Cart page and click \"Remove\" for the remaining item",
+        "expected_result": "Cart badge disappears (count 0) and cart list is empty."
+      }
+    ],
+    "expected_results": [
+      "Badge count never goes below 0."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-CRT-003",
+    "requirement_id": "REQ-CRT-003",
+    "title": "Cart Persistence Across Refresh and Navigation",
+    "priority": "P1",
+    "preconditions": [
+      "User has added at least one item to the cart"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Refresh the browser (F5)",
+        "expected_result": "Cart badge still shows the same count; added items remain in cart."
+      },
+      {
+        "step": 2,
+        "action": "Navigate to a different page (e.g., open the sidebar, go to \"About\"), then return to inventory",
+        "expected_result": "Cart state is unchanged."
+      }
+    ],
+    "expected_results": [
+      "Cart data persists in local storage/session storage as defined."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-CRT-004",
+    "requirement_id": "REQ-CRT-004",
+    "title": "Cart View – Verify Item Breakdown",
+    "priority": "P1",
+    "preconditions": [
+      "User has added a single product to the cart"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Click the shopping cart badge to open /cart.html",
+        "expected_result": "Cart page loads displaying quantity (1), product title, description, price, and \"Continue Shopping\" / \"Checkout\" buttons."
+      }
+    ],
+    "expected_results": [
+      "Displayed item details match the product added from inventory."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-E2E-001",
+    "requirement_id": "REQ-CHK-001",
+    "title": "Checkout Step 1 – Enter Valid Customer Information",
+    "priority": "P1",
+    "preconditions": [
+      "User has at least one item in the cart and is on /cart.html"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Click the \"Checkout\" button",
+        "expected_result": "Navigation to /checkout-step-one.html."
+      },
+      {
+        "step": 2,
+        "action": "Enter First Name \"John\", Last Name \"Doe\", and Zip/Postal Code \"12345\"",
+        "expected_result": "Fields accept input."
+      },
+      {
+        "step": 3,
+        "action": "Click \"Continue\"",
+        "expected_result": "Proceed to Checkout Step 2 page."
+      }
+    ],
+    "expected_results": [
+      "User reaches step‑2 summary without errors."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-E2E-002",
+    "requirement_id": "REQ-CHK-002",
+    "title": "Checkout Step 1 – Validation of Missing Fields",
+    "priority": "P1",
+    "preconditions": [
+      "User is on /checkout-step-one.html"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Leave all fields empty and click \"Continue\"",
+        "expected_result": "Error banner: \"Error: First Name is required\"."
+      },
+      {
+        "step": 2,
+        "action": "Enter First Name only, leave Last Name and Postal Code empty, click \"Continue\"",
+        "expected_result": "Error banner: \"Error: Last Name is required\"."
+      },
+      {
+        "step": 3,
+        "action": "Enter First and Last Name, leave Postal Code empty, click \"Continue\"",
+        "expected_result": "Error banner: \"Error: Postal Code is required\"."
+      }
+    ],
+    "expected_results": [
+      "Progress is blocked until all mandatory fields are completed."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-E2E-003",
+    "requirement_id": "REQ-CHK-003",
+    "title": "Checkout Step 2 – Verify Summary Calculations and Tax",
+    "priority": "P1",
+    "preconditions": [
+      "User has completed Step 1 with valid info and has items in cart"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "On /checkout-step-two.html, capture the listed item total",
+        "expected_result": "Item total equals sum of individual product prices."
+      },
+      {
+        "step": 2,
+        "action": "Verify tax displayed as 8% of item total",
+        "expected_result": "Tax amount = Item total × 0.08."
+      },
+      {
+        "step": 3,
+        "action": "Verify total amount = Item total + Tax",
+        "expected_result": "Displayed total matches the calculated sum."
+      }
+    ],
+    "expected_results": [
+      "All monetary values are correct to two decimal places."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-E2E-004",
+    "requirement_id": "REQ-CHK-004",
+    "title": "Checkout Completion – Order Confirmation and Cart Reset",
+    "priority": "P1",
+    "preconditions": [
+      "User is on Checkout Step 2 page with valid summary"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Click the \"Finish\" button",
+        "expected_result": "Navigation to /checkout-complete.html."
+      },
+      {
+        "step": 2,
+        "action": "Verify header reads \"Thank you for your order!\"",
+        "expected_result": "Confirmation message displayed."
+      },
+      {
+        "step": 3,
+        "action": "Observe cart badge on the top navigation",
+        "expected_result": "Badge is cleared (no number shown)."
+      }
+    ],
+    "expected_results": [
+      "Order is completed and cart state is reset."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-GLB-001",
+    "requirement_id": "REQ-GLB-001",
+    "title": "Side Menu – Verify Presence of All Links",
+    "priority": "P2",
+    "preconditions": [
+      "User is logged in and on any internal page"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Click the hamburger (menu) icon",
+        "expected_result": "Slide‑out side menu appears."
+      },
+      {
+        "step": 2,
+        "action": "Check that the menu contains links: \"All Items\", \"About\", \"Logout\", \"Reset App State\"",
+        "expected_result": "All four items are present and selectable."
+      }
+    ],
+    "expected_results": [
+      "Menu opens smoothly and is keyboard‑navigable."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  },
+  {
+    "test_case_id": "TC-GLB-002",
+    "requirement_id": "REQ-GLB-002",
+    "title": "Reset App State – Clears Cart and Button States",
+    "priority": "P2",
+    "preconditions": [
+      "User has added multiple items to the cart"
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "Open side menu and click \"Reset App State\"",
+        "expected_result": "All items are removed from cart; \"Add to cart\" buttons revert on inventory page."
+      },
+      {
+        "step": 2,
+        "action": "Verify cart badge is no longer displayed",
+        "expected_result": "Badge count cleared."
+      }
+    ],
+    "expected_results": [
+      "Application returns to initial clean state."
+    ],
+    "observations": [],
+    "status": "ready_for_generation"
+  }
+]

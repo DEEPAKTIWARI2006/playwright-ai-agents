@@ -1,0 +1,62 @@
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+/.playwright/
+/.playwright-cli/
+
+# Screenshots & media (generated during runs)
+/screenshots/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build output
+/dist/
+/build/
+/out/
+tsconfig.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Storage (if session/auth state is saved here)
+/storage/
+
+# Coverage
+/coverage/
+/nyc_output/
+
+# Allure / other reports
+/allure-results/
+/allure-report/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Cache
+.cache/
+.eslintcache
+.stylelintcache

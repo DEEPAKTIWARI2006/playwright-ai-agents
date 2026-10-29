@@ -1,0 +1,1175 @@
+{
+  "source_report": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\results.json",
+  "html_report": "C:\\Basefolder\\AI\\playwright-ai-agents\\playwright-report\\index.html",
+  "artifacts_directory": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results",
+  "failed_test_instance_count": 33,
+  "failures": [
+    {
+      "test_id": null,
+      "title": "Add Item to Cart – Badge Increment and Button Toggle",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts",
+      "project": "chromium",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toHaveText(expected) failed\n\nLocator: locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\nExpected: \"Remove\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toHaveText\" locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')",
+          "stack": "Error: expect(locator).toHaveText(expected) failed\n\nLocator: locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\nExpected: \"Remove\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toHaveText\" locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts:23:37",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts",
+            "column": 37,
+            "line": 23
+          }
+        },
+        {
+          "message": "Error: expect(locator).toHaveText(expected) failed\n\nLocator: locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\nExpected: \"Remove\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toHaveText\" locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\n\n\n  21 |\n  22 |     // Expected Result: Button label changes to \"Remove\" and cart badge displays \"1\"\n> 23 |     await expect(firstAddToCartBtn).toHaveText('Remove');\n     |                                     ^\n  24 |     const cartBadge = page.locator('.shopping_cart_badge');\n  25 |     await expect(cartBadge).toHaveText('1');\n  26 |\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts:23:37",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts",
+            "column": 37,
+            "line": 23
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\add-item-to-cart-badge-inc-11e65-Increment-and-Button-Toggle-chromium\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Add Item to Cart – Badge Increment and Button Toggle",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts",
+      "project": "firefox",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toHaveText(expected) failed\n\nLocator: locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\nExpected: \"Remove\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toHaveText\" locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')",
+          "stack": "Error: expect(locator).toHaveText(expected) failed\n\nLocator: locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\nExpected: \"Remove\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toHaveText\" locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts:23:37",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts",
+            "column": 37,
+            "line": 23
+          }
+        },
+        {
+          "message": "Error: expect(locator).toHaveText(expected) failed\n\nLocator: locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\nExpected: \"Remove\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toHaveText\" locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\n\n\n  21 |\n  22 |     // Expected Result: Button label changes to \"Remove\" and cart badge displays \"1\"\n> 23 |     await expect(firstAddToCartBtn).toHaveText('Remove');\n     |                                     ^\n  24 |     const cartBadge = page.locator('.shopping_cart_badge');\n  25 |     await expect(cartBadge).toHaveText('1');\n  26 |\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts:23:37",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts",
+            "column": 37,
+            "line": 23
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\add-item-to-cart-badge-inc-11e65-Increment-and-Button-Toggle-firefox\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Add Item to Cart – Badge Increment and Button Toggle",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts",
+      "project": "webkit",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toHaveText(expected) failed\n\nLocator: locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\nExpected: \"Remove\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toHaveText\" locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')",
+          "stack": "Error: expect(locator).toHaveText(expected) failed\n\nLocator: locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\nExpected: \"Remove\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toHaveText\" locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts:23:37",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts",
+            "column": 37,
+            "line": 23
+          }
+        },
+        {
+          "message": "Error: expect(locator).toHaveText(expected) failed\n\nLocator: locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\nExpected: \"Remove\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toHaveText\" locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')\n\n\n  21 |\n  22 |     // Expected Result: Button label changes to \"Remove\" and cart badge displays \"1\"\n> 23 |     await expect(firstAddToCartBtn).toHaveText('Remove');\n     |                                     ^\n  24 |     const cartBadge = page.locator('.shopping_cart_badge');\n  25 |     await expect(cartBadge).toHaveText('1');\n  26 |\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts:23:37",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\add-item-to-cart-badge-increment-and-button-toggle.spec.ts",
+            "column": 37,
+            "line": 23
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\add-item-to-cart-badge-inc-11e65-Increment-and-Button-Toggle-webkit\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Cart View – Verify Item Breakdown",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts",
+      "project": "chromium",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "TypeError: page.locator(...).toBeVisible is not a function",
+          "stack": "TypeError: page.locator(...).toBeVisible is not a function\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts:37:66",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts",
+            "column": 66,
+            "line": 37
+          }
+        },
+        {
+          "message": "TypeError: page.locator(...).toBeVisible is not a function\n\n  35 |\n  36 |     // Verify \"Continue Shopping\" and \"Checkout\" buttons are present\n> 37 |     await expect(page.locator('[data-test=\"continue-shopping\"]').toBeVisible());\n     |                                                                  ^\n  38 |     await expect(page.locator('[data-test=\"checkout\"]').toBeVisible());\n  39 |\n  40 |     // Final expectation: Displayed item details match the product added from inventory\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts:37:66",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts",
+            "column": 66,
+            "line": 37
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\cart-view-verify-item-brea-3b196-iew-–-Verify-Item-Breakdown-chromium\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Cart View – Verify Item Breakdown",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts",
+      "project": "firefox",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "TypeError: page.locator(...).toBeVisible is not a function",
+          "stack": "TypeError: page.locator(...).toBeVisible is not a function\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts:37:66",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts",
+            "column": 66,
+            "line": 37
+          }
+        },
+        {
+          "message": "TypeError: page.locator(...).toBeVisible is not a function\n\n  35 |\n  36 |     // Verify \"Continue Shopping\" and \"Checkout\" buttons are present\n> 37 |     await expect(page.locator('[data-test=\"continue-shopping\"]').toBeVisible());\n     |                                                                  ^\n  38 |     await expect(page.locator('[data-test=\"checkout\"]').toBeVisible());\n  39 |\n  40 |     // Final expectation: Displayed item details match the product added from inventory\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts:37:66",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts",
+            "column": 66,
+            "line": 37
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\cart-view-verify-item-brea-3b196-iew-–-Verify-Item-Breakdown-firefox\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Cart View – Verify Item Breakdown",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts",
+      "project": "webkit",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "TypeError: page.locator(...).toBeVisible is not a function",
+          "stack": "TypeError: page.locator(...).toBeVisible is not a function\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts:37:66",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts",
+            "column": 66,
+            "line": 37
+          }
+        },
+        {
+          "message": "TypeError: page.locator(...).toBeVisible is not a function\n\n  35 |\n  36 |     // Verify \"Continue Shopping\" and \"Checkout\" buttons are present\n> 37 |     await expect(page.locator('[data-test=\"continue-shopping\"]').toBeVisible());\n     |                                                                  ^\n  38 |     await expect(page.locator('[data-test=\"checkout\"]').toBeVisible());\n  39 |\n  40 |     // Final expectation: Displayed item details match the product added from inventory\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts:37:66",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\cart-view-verify-item-breakdown.spec.ts",
+            "column": 66,
+            "line": 37
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\cart-view-verify-item-brea-3b196-iew-–-Verify-Item-Breakdown-webkit\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "TC-E2E-001: Checkout Step 1 – Enter Valid Customer Information",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-enter-valid-customer-information.spec.ts",
+      "project": "chromium",
+      "status": "timedOut",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "Test timeout of 30000ms exceeded.",
+          "location": null
+        },
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "",
+          "location": null
+        },
+        {
+          "message": "Error: page.click: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for locator('button[data-test=\"login-button\"]')\n\n\n  11 |     await page.getByPlaceholder('Username').fill('standard_user');\n  12 |     await page.getByPlaceholder('Password').fill('secret_sauce');\n> 13 |     await page.click('button[data-test=\"login-button\"]');\n     |                ^\n  14 |     \n  15 |     // Add an item to cart to satisfy precondition\n  16 |     await page.click('button[data-test=\"add-to-cart-sauce-labs-backpack\"]');\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-enter-valid-customer-information.spec.ts:13:16",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-enter-valid-customer-information.spec.ts",
+            "column": 16,
+            "line": 13
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\checkout-step-1-enter-vali-f6cfd--Valid-Customer-Information-chromium\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "TC-E2E-001: Checkout Step 1 – Enter Valid Customer Information",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-enter-valid-customer-information.spec.ts",
+      "project": "firefox",
+      "status": "timedOut",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "Test timeout of 30000ms exceeded.",
+          "location": null
+        },
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "",
+          "location": null
+        },
+        {
+          "message": "Error: page.click: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for locator('button[data-test=\"login-button\"]')\n\n\n  11 |     await page.getByPlaceholder('Username').fill('standard_user');\n  12 |     await page.getByPlaceholder('Password').fill('secret_sauce');\n> 13 |     await page.click('button[data-test=\"login-button\"]');\n     |                ^\n  14 |     \n  15 |     // Add an item to cart to satisfy precondition\n  16 |     await page.click('button[data-test=\"add-to-cart-sauce-labs-backpack\"]');\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-enter-valid-customer-information.spec.ts:13:16",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-enter-valid-customer-information.spec.ts",
+            "column": 16,
+            "line": 13
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\checkout-step-1-enter-vali-f6cfd--Valid-Customer-Information-firefox\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "TC-E2E-001: Checkout Step 1 – Enter Valid Customer Information",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-enter-valid-customer-information.spec.ts",
+      "project": "webkit",
+      "status": "timedOut",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "Test timeout of 30000ms exceeded.",
+          "location": null
+        },
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "",
+          "location": null
+        },
+        {
+          "message": "Error: page.click: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for locator('button[data-test=\"login-button\"]')\n\n\n  11 |     await page.getByPlaceholder('Username').fill('standard_user');\n  12 |     await page.getByPlaceholder('Password').fill('secret_sauce');\n> 13 |     await page.click('button[data-test=\"login-button\"]');\n     |                ^\n  14 |     \n  15 |     // Add an item to cart to satisfy precondition\n  16 |     await page.click('button[data-test=\"add-to-cart-sauce-labs-backpack\"]');\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-enter-valid-customer-information.spec.ts:13:16",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-enter-valid-customer-information.spec.ts",
+            "column": 16,
+            "line": 13
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\checkout-step-1-enter-vali-f6cfd--Valid-Customer-Information-webkit\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Checkout Step 1 – Validation of Missing Fields",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts",
+      "project": "chromium",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "TypeError: received is not iterable",
+          "stack": "TypeError: received is not iterable\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts:22:67",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts",
+            "column": 67,
+            "line": 22
+          }
+        },
+        {
+          "message": "TypeError: received is not iterable\n\n  20 |     // 1. Leave all fields empty and click \"Continue\"\n  21 |     await page.locator('[data-test=\"continue\"]').click();\n> 22 |     await expect(page.locator('[data-test=\"error\"]').innerText()).toContain('Error: First Name is required');\n     |                                                                   ^\n  23 |\n  24 |     // 2. Enter First Name only, leave Last Name and Postal Code empty, click \"Continue\"\n  25 |     await page.locator('[data-test=\"firstName\"]').fill('John');\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts:22:67",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts",
+            "column": 67,
+            "line": 22
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\checkout-step-1-validation-e78a5-alidation-of-Missing-Fields-chromium\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Checkout Step 1 – Validation of Missing Fields",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts",
+      "project": "firefox",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "TypeError: received is not iterable",
+          "stack": "TypeError: received is not iterable\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts:22:67",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts",
+            "column": 67,
+            "line": 22
+          }
+        },
+        {
+          "message": "TypeError: received is not iterable\n\n  20 |     // 1. Leave all fields empty and click \"Continue\"\n  21 |     await page.locator('[data-test=\"continue\"]').click();\n> 22 |     await expect(page.locator('[data-test=\"error\"]').innerText()).toContain('Error: First Name is required');\n     |                                                                   ^\n  23 |\n  24 |     // 2. Enter First Name only, leave Last Name and Postal Code empty, click \"Continue\"\n  25 |     await page.locator('[data-test=\"firstName\"]').fill('John');\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts:22:67",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts",
+            "column": 67,
+            "line": 22
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\checkout-step-1-validation-e78a5-alidation-of-Missing-Fields-firefox\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Checkout Step 1 – Validation of Missing Fields",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts",
+      "project": "webkit",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "TypeError: received is not iterable",
+          "stack": "TypeError: received is not iterable\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts:22:67",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts",
+            "column": 67,
+            "line": 22
+          }
+        },
+        {
+          "message": "TypeError: received is not iterable\n\n  20 |     // 1. Leave all fields empty and click \"Continue\"\n  21 |     await page.locator('[data-test=\"continue\"]').click();\n> 22 |     await expect(page.locator('[data-test=\"error\"]').innerText()).toContain('Error: First Name is required');\n     |                                                                   ^\n  23 |\n  24 |     // 2. Enter First Name only, leave Last Name and Postal Code empty, click \"Continue\"\n  25 |     await page.locator('[data-test=\"firstName\"]').fill('John');\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts:22:67",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\checkout-step-1-validation-of-missing-fields.spec.ts",
+            "column": 67,
+            "line": 22
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\checkout-step-1-validation-e78a5-alidation-of-Missing-Fields-webkit\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Access Inventory Without Authentication",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts",
+      "project": "chromium",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \"Epic sadface: Users must be logged in\"\nReceived string:    \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('[data-test=\"error\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"error\"]')\n    14 × locator resolved to <h3 role=\"alert\" data-test=\"error\">…</h3>\n       - unexpected value \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"",
+          "stack": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \"Epic sadface: Users must be logged in\"\nReceived string:    \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('[data-test=\"error\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"error\"]')\n    14 × locator resolved to <h3 role=\"alert\" data-test=\"error\">…</h3>\n       - unexpected value \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts:16:32",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts",
+            "column": 32,
+            "line": 16
+          }
+        },
+        {
+          "message": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \"Epic sadface: Users must be logged in\"\nReceived string:    \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('[data-test=\"error\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"error\"]')\n    14 × locator resolved to <h3 role=\"alert\" data-test=\"error\">…</h3>\n       - unexpected value \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\n\n\n  14 |     const errorMessage = page.locator('[data-test=\"error\"]');\n  15 |     await expect(errorMessage).toBeVisible();\n> 16 |     await expect(errorMessage).toContainText('Epic sadface: Users must be logged in');\n     |                                ^\n  17 |   });\n  18 | });\n  19 |\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts:16:32",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts",
+            "column": 32,
+            "line": 16
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\direct-route-protection-ac-7ad20-tory-Without-Authentication-chromium\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Access Inventory Without Authentication",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts",
+      "project": "firefox",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \"Epic sadface: Users must be logged in\"\nReceived string:    \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('[data-test=\"error\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"error\"]')\n    5 × locator resolved to <h3 role=\"alert\" data-test=\"error\">…</h3>\n      - unexpected value \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"",
+          "stack": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \"Epic sadface: Users must be logged in\"\nReceived string:    \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('[data-test=\"error\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"error\"]')\n    5 × locator resolved to <h3 role=\"alert\" data-test=\"error\">…</h3>\n      - unexpected value \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts:16:32",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts",
+            "column": 32,
+            "line": 16
+          }
+        },
+        {
+          "message": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \"Epic sadface: Users must be logged in\"\nReceived string:    \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('[data-test=\"error\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"error\"]')\n    5 × locator resolved to <h3 role=\"alert\" data-test=\"error\">…</h3>\n      - unexpected value \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\n\n\n  14 |     const errorMessage = page.locator('[data-test=\"error\"]');\n  15 |     await expect(errorMessage).toBeVisible();\n> 16 |     await expect(errorMessage).toContainText('Epic sadface: Users must be logged in');\n     |                                ^\n  17 |   });\n  18 | });\n  19 |\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts:16:32",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts",
+            "column": 32,
+            "line": 16
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\direct-route-protection-ac-7ad20-tory-Without-Authentication-firefox\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Access Inventory Without Authentication",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts",
+      "project": "webkit",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \"Epic sadface: Users must be logged in\"\nReceived string:    \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('[data-test=\"error\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"error\"]')\n    14 × locator resolved to <h3 role=\"alert\" data-test=\"error\">…</h3>\n       - unexpected value \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"",
+          "stack": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \"Epic sadface: Users must be logged in\"\nReceived string:    \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('[data-test=\"error\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"error\"]')\n    14 × locator resolved to <h3 role=\"alert\" data-test=\"error\">…</h3>\n       - unexpected value \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts:16:32",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts",
+            "column": 32,
+            "line": 16
+          }
+        },
+        {
+          "message": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \"Epic sadface: Users must be logged in\"\nReceived string:    \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('[data-test=\"error\"]') with timeout 5000ms\n  - waiting for locator('[data-test=\"error\"]')\n    14 × locator resolved to <h3 role=\"alert\" data-test=\"error\">…</h3>\n       - unexpected value \"Epic sadface: You can only access '/inventory.html' when you are logged in.\"\n\n\n  14 |     const errorMessage = page.locator('[data-test=\"error\"]');\n  15 |     await expect(errorMessage).toBeVisible();\n> 16 |     await expect(errorMessage).toContainText('Epic sadface: Users must be logged in');\n     |                                ^\n  17 |   });\n  18 | });\n  19 |\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts:16:32",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\direct-route-protection-access-inventory-without-authentication.spec.ts",
+            "column": 32,
+            "line": 16
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\direct-route-protection-ac-7ad20-tory-Without-Authentication-webkit\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Login Validation – Empty Username and Password Fields",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts",
+      "project": "chromium",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('heading', { name: 'Login' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('heading', { name: 'Login' }) with timeout 5000ms\n  - waiting for getByRole('heading', { name: 'Login' })",
+          "stack": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('heading', { name: 'Login' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('heading', { name: 'Login' }) with timeout 5000ms\n  - waiting for getByRole('heading', { name: 'Login' })\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts:7:64",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts",
+            "column": 64,
+            "line": 7
+          }
+        },
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('heading', { name: 'Login' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('heading', { name: 'Login' }) with timeout 5000ms\n  - waiting for getByRole('heading', { name: 'Login' })\n\n\n   5 |     // Step 1: Navigate to the login page\n   6 |     await page.goto('https://www.saucedemo.com/');\n>  7 |     await expect(page.getByRole('heading', { name: 'Login' })).toBeVisible();\n     |                                                                ^\n   8 |\n   9 |     // Step 2: Leave both Username and Password fields empty and click Login\n  10 |     await page.getByRole('button', { name: 'Login' }).click();\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts:7:64",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts",
+            "column": 64,
+            "line": 7
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\login-validation-empty-use-2092b-sername-and-Password-Fields-chromium\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Login Validation – Empty Username and Password Fields",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts",
+      "project": "firefox",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('heading', { name: 'Login' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('heading', { name: 'Login' }) with timeout 5000ms\n  - waiting for getByRole('heading', { name: 'Login' })",
+          "stack": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('heading', { name: 'Login' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('heading', { name: 'Login' }) with timeout 5000ms\n  - waiting for getByRole('heading', { name: 'Login' })\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts:7:64",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts",
+            "column": 64,
+            "line": 7
+          }
+        },
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('heading', { name: 'Login' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('heading', { name: 'Login' }) with timeout 5000ms\n  - waiting for getByRole('heading', { name: 'Login' })\n\n\n   5 |     // Step 1: Navigate to the login page\n   6 |     await page.goto('https://www.saucedemo.com/');\n>  7 |     await expect(page.getByRole('heading', { name: 'Login' })).toBeVisible();\n     |                                                                ^\n   8 |\n   9 |     // Step 2: Leave both Username and Password fields empty and click Login\n  10 |     await page.getByRole('button', { name: 'Login' }).click();\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts:7:64",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts",
+            "column": 64,
+            "line": 7
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\login-validation-empty-use-2092b-sername-and-Password-Fields-firefox\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Login Validation – Empty Username and Password Fields",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts",
+      "project": "webkit",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('heading', { name: 'Login' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('heading', { name: 'Login' }) with timeout 5000ms\n  - waiting for getByRole('heading', { name: 'Login' })",
+          "stack": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('heading', { name: 'Login' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('heading', { name: 'Login' }) with timeout 5000ms\n  - waiting for getByRole('heading', { name: 'Login' })\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts:7:64",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts",
+            "column": 64,
+            "line": 7
+          }
+        },
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('heading', { name: 'Login' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('heading', { name: 'Login' }) with timeout 5000ms\n  - waiting for getByRole('heading', { name: 'Login' })\n\n\n   5 |     // Step 1: Navigate to the login page\n   6 |     await page.goto('https://www.saucedemo.com/');\n>  7 |     await expect(page.getByRole('heading', { name: 'Login' })).toBeVisible();\n     |                                                                ^\n   8 |\n   9 |     // Step 2: Leave both Username and Password fields empty and click Login\n  10 |     await page.getByRole('button', { name: 'Login' }).click();\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts:7:64",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\login-validation-empty-username-and-password-fields.spec.ts",
+            "column": 64,
+            "line": 7
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\login-validation-empty-use-2092b-sername-and-Password-Fields-webkit\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Logout Clears Session and Local Storage",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\logout-clears-session-and-local-storage.spec.ts",
+      "project": "chromium",
+      "status": "timedOut",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "Test timeout of 30000ms exceeded.",
+          "location": null
+        },
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "",
+          "location": null
+        },
+        {
+          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for getByRole('link', { name: 'Logout' })\n\n\n  15 |\n  16 |     // 2. Click the \"Logout\" link\n> 17 |     await page.getByRole('link', { name: 'Logout' }).click();\n     |                                                      ^\n  18 |     \n  19 |     // Expected Result: User is redirected to the login page\n  20 |     await expect(page).toHaveURL('https://www.saucedemo.com/');\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\logout-clears-session-and-local-storage.spec.ts:17:54",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\logout-clears-session-and-local-storage.spec.ts",
+            "column": 54,
+            "line": 17
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\logout-clears-session-and--116da-s-Session-and-Local-Storage-chromium\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Logout Clears Session and Local Storage",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\logout-clears-session-and-local-storage.spec.ts",
+      "project": "firefox",
+      "status": "timedOut",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "Test timeout of 30000ms exceeded.",
+          "location": null
+        },
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "",
+          "location": null
+        },
+        {
+          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for getByRole('link', { name: 'Logout' })\n\n\n  15 |\n  16 |     // 2. Click the \"Logout\" link\n> 17 |     await page.getByRole('link', { name: 'Logout' }).click();\n     |                                                      ^\n  18 |     \n  19 |     // Expected Result: User is redirected to the login page\n  20 |     await expect(page).toHaveURL('https://www.saucedemo.com/');\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\logout-clears-session-and-local-storage.spec.ts:17:54",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\logout-clears-session-and-local-storage.spec.ts",
+            "column": 54,
+            "line": 17
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\logout-clears-session-and--116da-s-Session-and-Local-Storage-firefox\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Logout Clears Session and Local Storage",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\logout-clears-session-and-local-storage.spec.ts",
+      "project": "webkit",
+      "status": "timedOut",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "Test timeout of 30000ms exceeded.",
+          "location": null
+        },
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "",
+          "location": null
+        },
+        {
+          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for getByRole('link', { name: 'Logout' })\n\n\n  15 |\n  16 |     // 2. Click the \"Logout\" link\n> 17 |     await page.getByRole('link', { name: 'Logout' }).click();\n     |                                                      ^\n  18 |     \n  19 |     // Expected Result: User is redirected to the login page\n  20 |     await expect(page).toHaveURL('https://www.saucedemo.com/');\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\logout-clears-session-and-local-storage.spec.ts:17:54",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\logout-clears-session-and-local-storage.spec.ts",
+            "column": 54,
+            "line": 17
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\logout-clears-session-and--116da-s-Session-and-Local-Storage-webkit\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Verify 6 Items Render Correctly",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts",
+      "project": "chromium",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.inventory_item').first().locator('.inventory_item_img')\nExpected: visible\nError: strict mode violation: locator('.inventory_item').first().locator('.inventory_item_img') resolved to 2 elements:\n    1) <div class=\"inventory_item_img\">…</div> aka locator('.inventory_item_img').first()\n    2) <img alt=\"Sauce Labs Backpack\" class=\"inventory_item_img\" data-test=\"inventory-item-sauce-labs-backpack-img\" src=\"/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg\"/> aka locator('[data-test=\"item-4-img-link\"]')\n\nCall log:\n  - Expect \"toBeVisible\" locator('.inventory_item').first().locator('.inventory_item_img') with timeout 5000ms\n  - waiting for locator('.inventory_item').first().locator('.inventory_item_img')",
+          "stack": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.inventory_item').first().locator('.inventory_item_img')\nExpected: visible\nError: strict mode violation: locator('.inventory_item').first().locator('.inventory_item_img') resolved to 2 elements:\n    1) <div class=\"inventory_item_img\">…</div> aka locator('.inventory_item_img').first()\n    2) <img alt=\"Sauce Labs Backpack\" class=\"inventory_item_img\" data-test=\"inventory-item-sauce-labs-backpack-img\" src=\"/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg\"/> aka locator('[data-test=\"item-4-img-link\"]')\n\nCall log:\n  - Expect \"toBeVisible\" locator('.inventory_item').first().locator('.inventory_item_img') with timeout 5000ms\n  - waiting for locator('.inventory_item').first().locator('.inventory_item_img')\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts:27:57",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts",
+            "column": 57,
+            "line": 27
+          }
+        },
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.inventory_item').first().locator('.inventory_item_img')\nExpected: visible\nError: strict mode violation: locator('.inventory_item').first().locator('.inventory_item_img') resolved to 2 elements:\n    1) <div class=\"inventory_item_img\">…</div> aka locator('.inventory_item_img').first()\n    2) <img alt=\"Sauce Labs Backpack\" class=\"inventory_item_img\" data-test=\"inventory-item-sauce-labs-backpack-img\" src=\"/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg\"/> aka locator('[data-test=\"item-4-img-link\"]')\n\nCall log:\n  - Expect \"toBeVisible\" locator('.inventory_item').first().locator('.inventory_item_img') with timeout 5000ms\n  - waiting for locator('.inventory_item').first().locator('.inventory_item_img')\n\n\n  25 |     const cards = await productCards.all();\n  26 |     for (const card of cards) {\n> 27 |       await expect(card.locator('.inventory_item_img')).toBeVisible();\n     |                                                         ^\n  28 |       await expect(card.locator('.inventory_item_name')).toBeVisible();\n  29 |       await expect(card.locator('.inventory_item_desc')).toBeVisible();\n  30 |       await expect(card.locator('.inventory_item_price')).toBeVisible();\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts:27:57",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts",
+            "column": 57,
+            "line": 27
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\product-listing-verify-6-i-69c5b-fy-6-Items-Render-Correctly-chromium\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Verify 6 Items Render Correctly",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts",
+      "project": "firefox",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.inventory_item').first().locator('.inventory_item_img')\nExpected: visible\nError: strict mode violation: locator('.inventory_item').first().locator('.inventory_item_img') resolved to 2 elements:\n    1) <div class=\"inventory_item_img\">…</div> aka locator('.inventory_item_img').first()\n    2) <img alt=\"Sauce Labs Backpack\" class=\"inventory_item_img\" data-test=\"inventory-item-sauce-labs-backpack-img\" src=\"/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg\"/> aka locator('[data-test=\"item-4-img-link\"]')\n\nCall log:\n  - Expect \"toBeVisible\" locator('.inventory_item').first().locator('.inventory_item_img') with timeout 5000ms\n  - waiting for locator('.inventory_item').first().locator('.inventory_item_img')",
+          "stack": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.inventory_item').first().locator('.inventory_item_img')\nExpected: visible\nError: strict mode violation: locator('.inventory_item').first().locator('.inventory_item_img') resolved to 2 elements:\n    1) <div class=\"inventory_item_img\">…</div> aka locator('.inventory_item_img').first()\n    2) <img alt=\"Sauce Labs Backpack\" class=\"inventory_item_img\" data-test=\"inventory-item-sauce-labs-backpack-img\" src=\"/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg\"/> aka locator('[data-test=\"item-4-img-link\"]')\n\nCall log:\n  - Expect \"toBeVisible\" locator('.inventory_item').first().locator('.inventory_item_img') with timeout 5000ms\n  - waiting for locator('.inventory_item').first().locator('.inventory_item_img')\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts:27:57",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts",
+            "column": 57,
+            "line": 27
+          }
+        },
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.inventory_item').first().locator('.inventory_item_img')\nExpected: visible\nError: strict mode violation: locator('.inventory_item').first().locator('.inventory_item_img') resolved to 2 elements:\n    1) <div class=\"inventory_item_img\">…</div> aka locator('.inventory_item_img').first()\n    2) <img alt=\"Sauce Labs Backpack\" class=\"inventory_item_img\" data-test=\"inventory-item-sauce-labs-backpack-img\" src=\"/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg\"/> aka locator('[data-test=\"item-4-img-link\"]')\n\nCall log:\n  - Expect \"toBeVisible\" locator('.inventory_item').first().locator('.inventory_item_img') with timeout 5000ms\n  - waiting for locator('.inventory_item').first().locator('.inventory_item_img')\n\n\n  25 |     const cards = await productCards.all();\n  26 |     for (const card of cards) {\n> 27 |       await expect(card.locator('.inventory_item_img')).toBeVisible();\n     |                                                         ^\n  28 |       await expect(card.locator('.inventory_item_name')).toBeVisible();\n  29 |       await expect(card.locator('.inventory_item_desc')).toBeVisible();\n  30 |       await expect(card.locator('.inventory_item_price')).toBeVisible();\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts:27:57",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts",
+            "column": 57,
+            "line": 27
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\product-listing-verify-6-i-69c5b-fy-6-Items-Render-Correctly-firefox\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Verify 6 Items Render Correctly",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts",
+      "project": "webkit",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.inventory_item').first().locator('.inventory_item_img')\nExpected: visible\nError: strict mode violation: locator('.inventory_item').first().locator('.inventory_item_img') resolved to 2 elements:\n    1) <div class=\"inventory_item_img\">…</div> aka locator('.inventory_item_img').first()\n    2) <img alt=\"Sauce Labs Backpack\" class=\"inventory_item_img\" data-test=\"inventory-item-sauce-labs-backpack-img\" src=\"/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg\"/> aka locator('[data-test=\"item-4-img-link\"]')\n\nCall log:\n  - Expect \"toBeVisible\" locator('.inventory_item').first().locator('.inventory_item_img') with timeout 5000ms\n  - waiting for locator('.inventory_item').first().locator('.inventory_item_img')",
+          "stack": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.inventory_item').first().locator('.inventory_item_img')\nExpected: visible\nError: strict mode violation: locator('.inventory_item').first().locator('.inventory_item_img') resolved to 2 elements:\n    1) <div class=\"inventory_item_img\">…</div> aka locator('.inventory_item_img').first()\n    2) <img alt=\"Sauce Labs Backpack\" class=\"inventory_item_img\" data-test=\"inventory-item-sauce-labs-backpack-img\" src=\"/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg\"/> aka locator('[data-test=\"item-4-img-link\"]')\n\nCall log:\n  - Expect \"toBeVisible\" locator('.inventory_item').first().locator('.inventory_item_img') with timeout 5000ms\n  - waiting for locator('.inventory_item').first().locator('.inventory_item_img')\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts:27:57",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts",
+            "column": 57,
+            "line": 27
+          }
+        },
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.inventory_item').first().locator('.inventory_item_img')\nExpected: visible\nError: strict mode violation: locator('.inventory_item').first().locator('.inventory_item_img') resolved to 2 elements:\n    1) <div class=\"inventory_item_img\">…</div> aka locator('.inventory_item_img').first()\n    2) <img alt=\"Sauce Labs Backpack\" class=\"inventory_item_img\" data-test=\"inventory-item-sauce-labs-backpack-img\" src=\"/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg\"/> aka locator('[data-test=\"item-4-img-link\"]')\n\nCall log:\n  - Expect \"toBeVisible\" locator('.inventory_item').first().locator('.inventory_item_img') with timeout 5000ms\n  - waiting for locator('.inventory_item').first().locator('.inventory_item_img')\n\n\n  25 |     const cards = await productCards.all();\n  26 |     for (const card of cards) {\n> 27 |       await expect(card.locator('.inventory_item_img')).toBeVisible();\n     |                                                         ^\n  28 |       await expect(card.locator('.inventory_item_name')).toBeVisible();\n  29 |       await expect(card.locator('.inventory_item_desc')).toBeVisible();\n  30 |       await expect(card.locator('.inventory_item_price')).toBeVisible();\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts:27:57",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-listing-verify-6-items-render-correctly.spec.ts",
+            "column": 57,
+            "line": 27
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\product-listing-verify-6-i-69c5b-fy-6-Items-Render-Correctly-webkit\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Product Sorting – Verify All Four Sort Options",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-sorting-verify-all-four-sort-options.spec.ts",
+      "project": "chromium",
+      "status": "timedOut",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "Test timeout of 30000ms exceeded.",
+          "location": null
+        },
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "",
+          "location": null
+        },
+        {
+          "message": "Error: locator.selectOption: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for locator('[data-test=\"product_sort_container\"]')\n\n\n  18 |\n  19 |     // 1. Select \"Name (A to Z)\" from the sort dropdown\n> 20 |     await sortDropdown.selectOption({ label: 'Name (A to Z)' });\n     |                        ^\n  21 |     // Verification: Products reorder alphabetically ascending\n  22 |     let namesAZ = await productNames.allInnerTexts();\n  23 |     expect(namesAZ).toEqual([...namesAZ].sort());\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-sorting-verify-all-four-sort-options.spec.ts:20:24",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-sorting-verify-all-four-sort-options.spec.ts",
+            "column": 24,
+            "line": 20
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\product-sorting-verify-all-fad30-erify-All-Four-Sort-Options-chromium\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Product Sorting – Verify All Four Sort Options",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-sorting-verify-all-four-sort-options.spec.ts",
+      "project": "firefox",
+      "status": "timedOut",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "Test timeout of 30000ms exceeded.",
+          "location": null
+        },
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "",
+          "location": null
+        },
+        {
+          "message": "Error: locator.selectOption: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for locator('[data-test=\"product_sort_container\"]')\n\n\n  18 |\n  19 |     // 1. Select \"Name (A to Z)\" from the sort dropdown\n> 20 |     await sortDropdown.selectOption({ label: 'Name (A to Z)' });\n     |                        ^\n  21 |     // Verification: Products reorder alphabetically ascending\n  22 |     let namesAZ = await productNames.allInnerTexts();\n  23 |     expect(namesAZ).toEqual([...namesAZ].sort());\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-sorting-verify-all-four-sort-options.spec.ts:20:24",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-sorting-verify-all-four-sort-options.spec.ts",
+            "column": 24,
+            "line": 20
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\product-sorting-verify-all-fad30-erify-All-Four-Sort-Options-firefox\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Product Sorting – Verify All Four Sort Options",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-sorting-verify-all-four-sort-options.spec.ts",
+      "project": "webkit",
+      "status": "timedOut",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "Test timeout of 30000ms exceeded.",
+          "location": null
+        },
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "",
+          "location": null
+        },
+        {
+          "message": "Error: locator.selectOption: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for locator('[data-test=\"product_sort_container\"]')\n\n\n  18 |\n  19 |     // 1. Select \"Name (A to Z)\" from the sort dropdown\n> 20 |     await sortDropdown.selectOption({ label: 'Name (A to Z)' });\n     |                        ^\n  21 |     // Verification: Products reorder alphabetically ascending\n  22 |     let namesAZ = await productNames.allInnerTexts();\n  23 |     expect(namesAZ).toEqual([...namesAZ].sort());\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-sorting-verify-all-four-sort-options.spec.ts:20:24",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\product-sorting-verify-all-four-sort-options.spec.ts",
+            "column": 24,
+            "line": 20
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\product-sorting-verify-all-fad30-erify-All-Four-Sort-Options-webkit\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Reset App State – Clears Cart and Button States",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\reset-app-state-clears-cart-and-button-states.spec.ts",
+      "project": "chromium",
+      "status": "timedOut",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "Test timeout of 30000ms exceeded.",
+          "location": null
+        },
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "",
+          "location": null
+        },
+        {
+          "message": "Error: page.click: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for locator('[data-test=\"reset-app-state\"]')\n\n\n  18 |     // 1. Open side menu and click \"Reset App State\"\n  19 |     await page.click('#react-burger-menu-btn');\n> 20 |     await page.click('[data-test=\"reset-app-state\"]');\n     |                ^\n  21 |\n  22 |     // Verify \"Add to cart\" buttons revert on inventory page\n  23 |     await expect(page.locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')).toHaveText('Add to cart');\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\reset-app-state-clears-cart-and-button-states.spec.ts:20:16",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\reset-app-state-clears-cart-and-button-states.spec.ts",
+            "column": 16,
+            "line": 20
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\reset-app-state-clears-car-6477f-ears-Cart-and-Button-States-chromium\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Reset App State – Clears Cart and Button States",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\reset-app-state-clears-cart-and-button-states.spec.ts",
+      "project": "firefox",
+      "status": "timedOut",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "Test timeout of 30000ms exceeded.",
+          "location": null
+        },
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "",
+          "location": null
+        },
+        {
+          "message": "Error: page.click: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for locator('[data-test=\"reset-app-state\"]')\n\n\n  18 |     // 1. Open side menu and click \"Reset App State\"\n  19 |     await page.click('#react-burger-menu-btn');\n> 20 |     await page.click('[data-test=\"reset-app-state\"]');\n     |                ^\n  21 |\n  22 |     // Verify \"Add to cart\" buttons revert on inventory page\n  23 |     await expect(page.locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')).toHaveText('Add to cart');\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\reset-app-state-clears-cart-and-button-states.spec.ts:20:16",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\reset-app-state-clears-cart-and-button-states.spec.ts",
+            "column": 16,
+            "line": 20
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\reset-app-state-clears-car-6477f-ears-Cart-and-Button-States-firefox\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Reset App State – Clears Cart and Button States",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\reset-app-state-clears-cart-and-button-states.spec.ts",
+      "project": "webkit",
+      "status": "timedOut",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "Test timeout of 30000ms exceeded.",
+          "location": null
+        },
+        {
+          "message": "Test timeout of 30000ms exceeded.",
+          "stack": "",
+          "location": null
+        },
+        {
+          "message": "Error: page.click: Test timeout of 30000ms exceeded.\nCall log:\n  - waiting for locator('[data-test=\"reset-app-state\"]')\n\n\n  18 |     // 1. Open side menu and click \"Reset App State\"\n  19 |     await page.click('#react-burger-menu-btn');\n> 20 |     await page.click('[data-test=\"reset-app-state\"]');\n     |                ^\n  21 |\n  22 |     // Verify \"Add to cart\" buttons revert on inventory page\n  23 |     await expect(page.locator('[data-test=\"add-to-cart-sauce-labs-backpack\"]')).toHaveText('Add to cart');\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\reset-app-state-clears-cart-and-button-states.spec.ts:20:16",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\reset-app-state-clears-cart-and-button-states.spec.ts",
+            "column": 16,
+            "line": 20
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\reset-app-state-clears-car-6477f-ears-Cart-and-Button-States-webkit\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Side Menu – Verify Presence of All Links",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts",
+      "project": "chromium",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.bm-menu-wrap-cur').getByText('All Items')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.bm-menu-wrap-cur').getByText('All Items') with timeout 5000ms\n  - waiting for locator('.bm-menu-wrap-cur').getByText('All Items')",
+          "stack": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.bm-menu-wrap-cur').getByText('All Items')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.bm-menu-wrap-cur').getByText('All Items') with timeout 5000ms\n  - waiting for locator('.bm-menu-wrap-cur').getByText('All Items')\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts:20:47",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts",
+            "column": 47,
+            "line": 20
+          }
+        },
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.bm-menu-wrap-cur').getByText('All Items')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.bm-menu-wrap-cur').getByText('All Items') with timeout 5000ms\n  - waiting for locator('.bm-menu-wrap-cur').getByText('All Items')\n\n\n  18 |     const menu = page.locator('.bm-menu-wrap-cur');\n  19 |     \n> 20 |     await expect(menu.getByText('All Items')).toBeVisible();\n     |                                               ^\n  21 |     await expect(menu.getByText('About')).toBeVisible();\n  22 |     await expect(menu.getByText('Logout')).toBeVisible();\n  23 |     await expect(menu.getByText('Reset App State')).toBeVisible();\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts:20:47",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts",
+            "column": 47,
+            "line": 20
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\side-menu-verify-presence--8b840-erify-Presence-of-All-Links-chromium\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Side Menu – Verify Presence of All Links",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts",
+      "project": "firefox",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.bm-menu-wrap-cur').getByText('All Items')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.bm-menu-wrap-cur').getByText('All Items') with timeout 5000ms\n  - waiting for locator('.bm-menu-wrap-cur').getByText('All Items')",
+          "stack": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.bm-menu-wrap-cur').getByText('All Items')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.bm-menu-wrap-cur').getByText('All Items') with timeout 5000ms\n  - waiting for locator('.bm-menu-wrap-cur').getByText('All Items')\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts:20:47",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts",
+            "column": 47,
+            "line": 20
+          }
+        },
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.bm-menu-wrap-cur').getByText('All Items')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.bm-menu-wrap-cur').getByText('All Items') with timeout 5000ms\n  - waiting for locator('.bm-menu-wrap-cur').getByText('All Items')\n\n\n  18 |     const menu = page.locator('.bm-menu-wrap-cur');\n  19 |     \n> 20 |     await expect(menu.getByText('All Items')).toBeVisible();\n     |                                               ^\n  21 |     await expect(menu.getByText('About')).toBeVisible();\n  22 |     await expect(menu.getByText('Logout')).toBeVisible();\n  23 |     await expect(menu.getByText('Reset App State')).toBeVisible();\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts:20:47",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts",
+            "column": 47,
+            "line": 20
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\side-menu-verify-presence--8b840-erify-Presence-of-All-Links-firefox\\error-context.md"
+        }
+      ]
+    },
+    {
+      "test_id": null,
+      "title": "Side Menu – Verify Presence of All Links",
+      "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts",
+      "project": "webkit",
+      "status": "failed",
+      "retry": 0,
+      "errors": [
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.bm-menu-wrap-cur').getByText('All Items')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.bm-menu-wrap-cur').getByText('All Items') with timeout 5000ms\n  - waiting for locator('.bm-menu-wrap-cur').getByText('All Items')",
+          "stack": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.bm-menu-wrap-cur').getByText('All Items')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.bm-menu-wrap-cur').getByText('All Items') with timeout 5000ms\n  - waiting for locator('.bm-menu-wrap-cur').getByText('All Items')\n\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts:20:47",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts",
+            "column": 47,
+            "line": 20
+          }
+        },
+        {
+          "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.bm-menu-wrap-cur').getByText('All Items')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.bm-menu-wrap-cur').getByText('All Items') with timeout 5000ms\n  - waiting for locator('.bm-menu-wrap-cur').getByText('All Items')\n\n\n  18 |     const menu = page.locator('.bm-menu-wrap-cur');\n  19 |     \n> 20 |     await expect(menu.getByText('All Items')).toBeVisible();\n     |                                               ^\n  21 |     await expect(menu.getByText('About')).toBeVisible();\n  22 |     await expect(menu.getByText('Logout')).toBeVisible();\n  23 |     await expect(menu.getByText('Reset App State')).toBeVisible();\n    at C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts:20:47",
+          "stack": "",
+          "location": {
+            "file": "C:\\Basefolder\\AI\\playwright-ai-agents\\tests\\side-menu-verify-presence-of-all-links.spec.ts",
+            "column": 47,
+            "line": 20
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "name": "error-context",
+          "content_type": "text/markdown",
+          "path": "C:\\Basefolder\\AI\\playwright-ai-agents\\test-results\\side-menu-verify-presence--8b840-erify-Presence-of-All-Links-webkit\\error-context.md"
+        }
+      ]
+    }
+  ]
+}
